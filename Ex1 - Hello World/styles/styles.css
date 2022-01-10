@@ -1,0 +1,5 @@
+.myh1 {
+	color: #777;
+	background: linear-gradient(45deg, black,#eee, black, #eee, black);
+	width: max-content;
+}
