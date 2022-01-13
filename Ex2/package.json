@@ -4,7 +4,9 @@
   "description": "Installation pour un projet avec la MERN stack",
   "main": "index.js",
   "scripts": {
-    "test": "none"
+    "start": "nodemon -w server server/server.js",
+    "watch": "babel src --out-dir public --watch --verbose",
+    "compile": "babel src --out-dir public"
   },
   "repository": {
     "type": "git",
@@ -21,8 +23,14 @@
   ],
   "author": "Forejy",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "nodemon": "^1.19.4"
+  },
   "devDependencies": {
+    "@babel/cli": "^7.16.8",
+    "@babel/core": "^7.16.7",
+    "@babel/preset-env": "^7.16.8",
+    "@babel/preset-react": "^7.16.7",
     "express": "^4.17.2",
     "mongodb": "^4.3.0"
   }
